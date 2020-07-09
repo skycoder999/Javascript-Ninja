@@ -1,0 +1,2 @@
+# Javascript-Ninja
+Teaching JavaScript
