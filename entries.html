@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Entries</title>
+</head>
+
+<body>
+    <button onclick="entryFuntion()">Show fruits</button>
+    <p id="fruits"></p>
+    <br />
+    <hr />
+    <button onclick="loopMe('Practice session')">Loop Me</button>
+    <p id="loopMe"></p>
+
+    <!--    <script>
+        var fruits = ["A", "B", "C"]
+        function entryFuntion() {
+            var entryStores = fruits.entries();
+            for (entryStore of entryStores) {
+                document.getElementById("demo").innerHTML += entryStore + '<br/>';
+            }
+        }
+    </script> -->
+
+    <script>
+        let entryFruits = ["Apple", "Orange", "Banana", "Mango"];
+        function entryFuntion() {
+            let entryStores = entryFruits.entries()
+            for (entryStore of entryStores) {
+                document.getElementById("fruits").innerHTML += entryStore + ' ' + '<br/>';
+            }
+
+        }
+
+        function loopMe(parameter) {
+            for (let i = 1; i <= 10; i++) {
+                document.getElementById("loopMe").innerHTML += i + " " + parameter + ' ' + '<br>';
+            }
+
+        }
+
+        let star = "Amreen";
+        function drawPattern(patternStar) {
+            for (let starLine = 1; starLine <= patternStar; starLine++) {
+                for (let star = 1; star <= 5; star++) {
+                    star += [i]
+                }
+                console.log(star)
+            }
+        }
+        drawPattern(5)
+
+    </script>
+
+
+</body>
+
+</html>
